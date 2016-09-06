@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Employee.h"
+#import "MathUtility.h"
 
 bool logString(int minutesInAYear) {
     if (minutesInAYear == 525600) {
@@ -29,9 +30,15 @@ int main(int argc, const char * argv[]) {
         NSDate *today = [NSDate date];
         
         Employee *fred = [[Employee alloc] init];
+        MathUtility *math = [[MathUtility alloc] init];
         
         [fred someMethod];
+        int result1 = [math timesTen: 2];
+        int result2 = [math addNumber: 5 toNumber: 3 ];
         
+        NSLog(@"result1 >> %i", result1);
+        NSLog(@"result2 >> %i", result2);
+
         if (logString(minutesInAYear)) {
             NSLog(@"There are %i minutes in a year. Today's date is %@ - also %@", minutesInAYear, today, message);
         } else {

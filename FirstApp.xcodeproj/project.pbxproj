@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C05D59DC1D7CB20300272C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D59DB1D7CB20300272C9E /* main.m */; };
 		C074CC621D7E273F00DE0028 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = C074CC611D7E273F00DE0028 /* Employee.m */; };
+		C074CC651D7E51B100DE0028 /* MathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C074CC641D7E51B100DE0028 /* MathUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		C05D59DB1D7CB20300272C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C074CC601D7E273F00DE0028 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		C074CC611D7E273F00DE0028 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		C074CC631D7E51B100DE0028 /* MathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtility.h; sourceTree = "<group>"; };
+		C074CC641D7E51B100DE0028 /* MathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				C074CC601D7E273F00DE0028 /* Employee.h */,
+				C074CC631D7E51B100DE0028 /* MathUtility.h */,
+				C074CC641D7E51B100DE0028 /* MathUtility.m */,
 				C074CC611D7E273F00DE0028 /* Employee.m */,
 				C05D59DA1D7CB20300272C9E /* FirstApp */,
 				C05D59D91D7CB20300272C9E /* Products */,
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C074CC651D7E51B100DE0028 /* MathUtility.m in Sources */,
 				C05D59DC1D7CB20300272C9E /* main.m in Sources */,
 				C074CC621D7E273F00DE0028 /* Employee.m in Sources */,
 			);
