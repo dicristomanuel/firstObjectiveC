@@ -50,6 +50,14 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Is Fred hired? >> %d", isHired);
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
+        
+        // Arrays
+        int myArray[] = {1, 10, 100, 1000, 10000};
+        NSString *mySecondArray[3] = {@"first", @"second", @"third"};
+        
+        NSLog(@"At position 3 myArray contains %i", myArray[2]);
+        NSLog(@"At position 1 mySecondArray contains >> %@", mySecondArray[0]);
     }
+    
     return 0;
 }
