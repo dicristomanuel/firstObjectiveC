@@ -10,9 +10,12 @@
 
 @interface Employee : NSObject
 
+-(id) initWithName:(NSString *) name;
+
 @property NSString *name;
 @property NSDate *hireDate;
 @property int employeeNumber;
+@property bool hired;
 
 -(void) someMethod;
 

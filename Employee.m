@@ -10,6 +10,24 @@
 
 @implementation Employee
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _hired = true;
+    }
+    return self;
+}
+
+- (id)initWithName:(NSString *) name
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+    }
+    return self;
+}
+
 -(void) someMethod {
     NSLog(@"Executing the method");
 }

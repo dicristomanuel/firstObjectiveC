@@ -36,8 +36,13 @@ int main(int argc, const char * argv[]) {
         int result1 = [math timesTen: 2];
         int result2 = [math addNumber: 5 toNumber: 3 ];
         
+        bool isHired = [fred hired];
+        
+        NSLog(@"Is Fred hired? >> %d", isHired);
+        
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
+        
 
         if (logString(minutesInAYear)) {
             NSLog(@"There are %i minutes in a year. Today's date is %@ - also %@", minutesInAYear, today, message);
