@@ -19,6 +19,7 @@
     return self;
 }
 
+
 - (id)initWithName:(NSString *) name
 {
     self = [super init];
@@ -30,6 +31,10 @@
 
 -(void) someMethod {
     NSLog(@"Executing the method");
+}
+
+-(void) dealloc {
+    NSLog(@"Automatically called dealloc method");
 }
 
 @end

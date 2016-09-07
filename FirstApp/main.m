@@ -10,6 +10,7 @@
 #import "Employee.h"
 #import "MathUtility.h"
 
+// helper function
 bool logString(int minutesInAYear) {
     if (minutesInAYear == 525600) {
         return true;
@@ -21,14 +22,22 @@ bool logString(int minutesInAYear) {
 int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
+        // variables - if statements
         int days = 365;
         int hours = 24;
         int minutes = 60;
         int minutesInAYear = days * hours * minutes;
-
-        NSString *message = @"foobar";
-        NSDate *today = [NSDate date];
         
+        NSDate *today = [NSDate date];
+        NSString *message = @"foobar";
+        
+        if (logString(minutesInAYear)) {
+            NSLog(@"There are %i minutes in a year. Today's date is %@ - also %@", minutesInAYear, today, message);
+        } else {
+            NSLog(@"%i is the wrong number", minutesInAYear);
+        }
+        
+        // Instanciate new custom classes and call methods
         Employee *fred = [[Employee alloc] init];
         MathUtility *math = [[MathUtility alloc] init];
         
@@ -39,16 +48,8 @@ int main(int argc, const char * argv[]) {
         bool isHired = [fred hired];
         
         NSLog(@"Is Fred hired? >> %d", isHired);
-        
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
-        
-
-        if (logString(minutesInAYear)) {
-            NSLog(@"There are %i minutes in a year. Today's date is %@ - also %@", minutesInAYear, today, message);
-        } else {
-            NSLog(@"%i is the wrong number", minutesInAYear);
-        }
     }
     return 0;
 }
