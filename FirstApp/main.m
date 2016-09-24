@@ -91,6 +91,33 @@ int main(int argc, const char * argv[]) {
         for (NSString *file in soundFiles) {
             NSLog(@"sound file > %@", file);
         }
+        
+        
+        
+        // File management
+        NSFileManager *fileManagement = [NSFileManager defaultManager];
+        NSString *path = @"/Users/manueldicristo/Downloads/pigions.psd";
+        
+        if ([fileManagement fileExistsAtPath:path]) {
+            NSLog(@"File exists");
+        } else {
+            NSLog(@"File doesn't exist");
+            return 1;
+        }
+        
+        NSDictionary *attributes = [fileManagement attributesOfItemAtPath:path error:nil];
+        
+        for (NSString *attribute in attributes) {
+            NSLog(@">> %@: %@ <<", attribute, attributes[attribute]);
+        }
+        
+        // Refactor path object
+        NSString *homeDirectory = NSHomeDirectory();
+        NSString *desktopPath = [homeDirectory stringByAppendingPathComponent:@"Desktop"];
+        NSString *folderPath = [desktopPath stringByAppendingPathComponent:@"UI"];
+        
+        NSLog(@"Folder path: %@", folderPath);
+        
     }
     
     return 0;
