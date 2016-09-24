@@ -82,8 +82,15 @@ int main(int argc, const char * argv[]) {
         NSLog(@"these the values of myDictionary: %@ - %@ - %@", myDictionary[@"a"], myDictionary[@"b"], mutableDictionary[@"CA"]);
         
         
-        
-
+        // For In loops
+        NSString *soundPath = @"/System/Library/Sounds";
+        NSFileManager *fileManager = [[NSFileManager alloc] init];
+        // grab all the files into the directory
+        NSArray *soundFiles = [fileManager subpathsAtPath: soundPath];
+        // for loop
+        for (NSString *file in soundFiles) {
+            NSLog(@"sound file > %@", file);
+        }
     }
     
     return 0;
