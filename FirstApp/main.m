@@ -56,7 +56,16 @@ int main(int argc, const char * argv[]) {
         NSString *mySecondArray[3] = {@"first", @"second", @"third"};
         
         NSLog(@"At position 3 myArray contains %i", myArray[2]);
-        NSLog(@"At position 1 mySecondArray contains >> %@", mySecondArray[0]);
+        NSLog(@"At position 1 mySecondArray contains >>  %@", mySecondArray[0]);
+        
+        NSString *outsideString = @"insert this!";
+        
+        // Using NSArray
+        NSArray *newArray = @[outsideString, @"Hello, World!", @42];
+        NSLog(@"these are the elements in the array: %@ - %@ - %@", newArray[0], newArray[1], newArray[2]);
+        
+        NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithObjects: @"one", @"two", nil];
+
     }
     
     return 0;
