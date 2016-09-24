@@ -22,6 +22,7 @@ bool logString(int minutesInAYear) {
 int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
+        
         // variables - if statements
         int days = 365;
         int hours = 24;
@@ -37,6 +38,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%i is the wrong number", minutesInAYear);
         }
         
+        
         // Instanciate new custom classes and call methods
         Employee *fred = [[Employee alloc] init];
         MathUtility *math = [[MathUtility alloc] init];
@@ -51,6 +53,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
         
+        
         // Arrays
         int myArray[] = {1, 10, 100, 1000, 10000};
         NSString *mySecondArray[3] = {@"first", @"second", @"third"};
@@ -60,11 +63,26 @@ int main(int argc, const char * argv[]) {
         
         NSString *outsideString = @"insert this!";
         
+        
         // Using NSArray
         NSArray *newArray = @[outsideString, @"Hello, World!", @42];
-        NSLog(@"these are the elements in the array: %@ - %@ - %@", newArray[0], newArray[1], newArray[2]);
-        
         NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithObjects: @"one", @"two", nil];
+        NSLog(@"these are the elements in the arrays: %@ - %@ - %@", newArray[0], newArray[1], mutableArray[1]);
+        
+        
+        
+        // Using NSDictionary
+        NSMutableDictionary *mutableDictionary = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                                  @"California", @"CA",
+                                                  @"Illinois", @"IL",
+                                                  @"Michigan", @"MI",
+                                                  nil];
+        
+        NSDictionary *myDictionary = @{ @"a": @1, @"b": @2, @"c": @3 };
+        NSLog(@"these the values of myDictionary: %@ - %@ - %@", myDictionary[@"a"], myDictionary[@"b"], mutableDictionary[@"CA"]);
+        
+        
+        
 
     }
     
