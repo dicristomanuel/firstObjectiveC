@@ -124,7 +124,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Folder path: %@", folderPath);
         
         
-        // Category
+        // Category - add methods to class
         NSString *stringExample = @"Convert this string please";
         NSString *noSpace = [stringExample convertWhiteSpace];
         

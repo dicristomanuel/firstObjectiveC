@@ -15,7 +15,7 @@
 @property NSString *name;
 @property NSDate *hireDate;
 @property int employeeNumber;
-@property bool hired;
+@property (readonly) bool hired;
 
 -(void) someMethod;
 

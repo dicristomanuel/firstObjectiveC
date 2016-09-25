@@ -8,6 +8,13 @@
 
 #import "Employee.h"
 
+@interface Employee ()
+
+    @property bool hired;
+
+@end
+
+
 @implementation Employee
 
 - (id)init
