@@ -29,6 +29,11 @@
     return self;
 }
 
+-(NSString *) description {
+    NSString *desc = [NSString stringWithFormat:@"Description of the class instance %@ - %d", self.name, self.hired];
+    return desc;
+};
+
 -(void) someMethod {
     NSLog(@"Executing the method");
 }

@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Is Fred hired? >> %d", isHired);
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
+        NSLog(@"Employee class: %@", fred);
         
         
         // Arrays
