@@ -48,7 +48,9 @@ int main(int argc, const char * argv[]) {
         int result2 = [math addNumber: 5 toNumber: 3 ];
         
         bool isHired = [fred hired];
+        fred.name = @"Fred";
         
+        NSLog(@"Employee name >> %@", fred.name);
         NSLog(@"Is Fred hired? >> %d", isHired);
         NSLog(@"result1 >> %i", result1);
         NSLog(@"result2 >> %i", result2);
