@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Employee.h"
 #import "MathUtility.h"
+#import "NSString+FormattingOptions.h"
 
 // helper function
 bool logString(int minutesInAYear) {
@@ -18,6 +19,7 @@ bool logString(int minutesInAYear) {
         return false;
     }
 }
+// =========
 
 int main(int argc, const char * argv[]) {
 
@@ -120,6 +122,13 @@ int main(int argc, const char * argv[]) {
         NSString *folderPath = [desktopPath stringByAppendingPathComponent:@"UI"];
         
         NSLog(@"Folder path: %@", folderPath);
+        
+        
+        // Category
+        NSString *stringExample = @"Convert this string please";
+        NSString *noSpace = [stringExample convertWhiteSpace];
+        
+        NSLog(@"%@", noSpace);
         
     }
     
